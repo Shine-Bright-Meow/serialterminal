@@ -24,7 +24,6 @@ jobs:
         run: |
           echo ${GITHUB_SHA::8}
           sed -i 's/dev/dev '"${GITHUB_SHA::8}"'/' src/version.js
-          sed -i 's/localhost/serial.huhn.me/' src/version.js
       
       - name: Build
         run: npm run build
