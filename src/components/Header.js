@@ -34,23 +34,6 @@ const Header = () => {
                     &nbsp;&nbsp;Serial Terminal
                 </Typography>
 
-                <Button
-                    //variant='contained'
-                    //color='success'
-                    sx={{ color: '#fff' }}
-                    href='https://huhn.me/'
-                    target='_blank'
-                    endIcon={<OpenInNewIcon />}>
-                    More Tools
-                </Button>
-
-                <Button
-                    sx={{ color: '#fff' }}
-                    target='_blank'
-                    href='#'
-                >
-                    <AddBoxIcon/>
-                </Button>
             </Toolbar>
         </AppBar>
     )
