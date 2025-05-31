@@ -24,6 +24,7 @@ jobs:
         run: |
           echo ${GITHUB_SHA::8}
           sed -i 's/dev/dev '"${GITHUB_SHA::8}"'/' src/version.js
+          sed -i 's/localhost/smol.shinebright.dev/' src/version.js
       
       - name: Build
         run: npm run build
@@ -34,3 +35,4 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages  # default: gh-pages
           publish_dir: ./build
+          cname: smol.shinebright.dev
