@@ -8,6 +8,11 @@ import version from '../version.js'
 
 const Footer = () => {
     return (
+        <Box sx={{ marginTop: 'auto' }}>
+            { /* Made in Germany :D */}
+            <Box sx={{ mx: 'auto', mt: 0 }}>
+            </Box>
+        </Box>
     )
 }
 

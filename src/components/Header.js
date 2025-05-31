@@ -34,6 +34,11 @@ const Header = () => {
                     &nbsp;&nbsp;Serial Terminal
                 </Typography>
 
+                <Button>
+                </Button>
+
+                <Button>
+                </Button>
             </Toolbar>
         </AppBar>
     )
