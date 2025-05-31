@@ -3,6 +3,13 @@ on:
   push:
     branches: 
       - main
+  workflow_dispatch:
+
+# Allow one concurrent deployment
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   Publish:
     runs-on: ubuntu-latest
@@ -28,4 +35,3 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages  # default: gh-pages
           publish_dir: ./build
-          cname: smol.shinebright.dev
