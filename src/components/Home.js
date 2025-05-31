@@ -47,7 +47,7 @@ const Home = (props) => {
                         <Alert severity='info' align='left'>
                             1. Click on CONNECT<br />
                             2. Plug in your device & select the port<br />
-                            3. Enjoy the Serial Terminal 😊<br />
+                            3. Enjoy the Serial Console 😊<br />
                             4. Make sure to meow at your Smol Receiver/Tracker <br />
                         </Alert>
                     </Box>
